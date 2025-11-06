@@ -1,6 +1,3 @@
-﻿@import "base/basic.css";
-@import "base/layout.css";
-
 @charset "utf-8";
 
 /*-- basic --*/
@@ -82,3 +79,4 @@ body
 {
     background-position: -583px 8px;
 }
+
