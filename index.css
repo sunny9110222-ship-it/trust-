@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="./mobile.css">
 @charset "utf-8";
 
 /*-- basic --*/
@@ -79,4 +81,5 @@ body
 {
     background-position: -583px 8px;
 }
+
 
