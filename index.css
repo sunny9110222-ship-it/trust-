@@ -94,4 +94,15 @@ a:hover {
   background-color: #145f65;
 }
 
+.banner_img--pc {
+	width:100%;
+	max-height:420px;
+	object-fit:cover;
+	display:block;
+}
+
+.banner_img--sp {
+	display: none;
+}
+
 
