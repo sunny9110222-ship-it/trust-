@@ -1,0 +1,355 @@
+﻿@charset "utf-8";
+
+/* 手機版面 */
+@media screen and (max-width: 767px)
+{
+    /* layout */
+    body
+    {
+        background: #E9F2FC url('../images/mobile/bg.gif') repeat-x 0 0;
+        font-size: 1.2em;
+        height: 100%;
+    }
+
+    #container
+    {
+        background: url('../images/mobile/bg.png') no-repeat center 0;
+        background-size: contain;
+        min-width: 100%;
+    }
+
+    #header, #main, #footer, .wrap, #sidebar, #content
+    {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+
+    #header
+    {
+        background: url('../images/mobile/mainBg.png') no-repeat center bottom;
+        background-size: 767px 49px;
+        height: 170px;
+    }
+
+    #main
+    {
+        background: none;
+        height: auto;
+        padding-bottom: 270px;
+    }
+
+    #footer
+    {
+        background: #1C8C83 url('../images/mobile/footerBg2.gif') repeat-x 0 bottom;
+        border-top: 2px solid #E0E0E0;
+        height: auto;
+        padding: 10px 0 0 0;
+        margin: -245px 0 0 0;
+    }
+
+    #sidebar
+    {
+        margin: 0 0 15px 0;
+        position: relative;
+    }
+
+    #content
+    {
+        background: url('../images/mobile/dot.gif') repeat-x 0 3px;
+        padding-top: 5px;
+        margin: 0 auto;
+        width: 97%;
+    }
+
+    /* header */
+    h1
+    {
+        background: url('../images/mobile/logo.png') no-repeat center 0;
+        background-size: 400px 85px;
+        width: 100%;
+        height: 85px;
+    }
+
+    #banner
+    {
+        display: none;
+        height: auto;
+        width: auto;
+        left: 0;
+    }
+
+    #menu
+    {
+        text-align: center;
+        margin: 0 5px;
+        top: 130px;
+        width: 98%;
+        z-index: 10000;
+    }
+
+        #menu li
+        {
+            display: inline-block;
+            float: none;
+            margin: 0 3px;
+            padding: 0;
+        }
+
+        #menu a
+        {
+            background: none;
+            color: #19757F;
+            font-size: 1em;
+            display: inline-block;
+            width: auto;
+            height: auto;
+            padding: 0;
+        }
+
+            #menu a:hover, #menu a:active,
+            .AboutUs #menu .nav2 a,
+            .News #menu .nav3 a,
+            .Products #menu .nav4 a,
+            .ContactUs #menu .nav5 a
+            {
+                color: #EB3D00;
+            }
+
+        #menu .nav1
+        {
+            display: none;
+        }
+
+        #menu em
+        {
+            display: none;
+        }
+
+    /* sidebar */
+    #sidebar h4
+    {
+        display: none;
+    }
+
+    nav
+    {
+        position: relative;
+        z-index: 9999;
+    }
+
+    #menu-icon
+    {
+        background: url('../images/mobile/menu-icon.gif') no-repeat 150px 10px;
+        background-size: 23px 23px;
+        color: #1C8C83;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-indent: 0;
+        display: block;
+        padding: 3px 28px 3px 0;
+        margin: 0 0 0 10px;
+    }
+
+        #menu-icon:hover, #menu-icon.active
+        {
+            background-image: url('../images/mobile/menu-icon2.gif');
+        }
+
+    #sidebar dl
+    {
+        display: none;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+    #sidebar dt
+    {
+        font-size: .9em;
+    }
+
+        #sidebar dt a:hover,
+        #sidebar dt.current a
+        {
+            background-position: 0 0;
+        }
+
+    #sidebar dd
+    {
+        display: inline-block;
+    }
+
+    /* footer */
+    .wrap
+    {
+        background: url('../images/mobile/footerBg.gif') no-repeat center bottom;
+        background-size: 480px 27px;
+    }
+
+    h2
+    {
+        background: url('../images/mobile/logo2.gif') no-repeat 0 0;
+        background-size: 250px 43px;
+        width: 250px;
+        height: 43px;
+        margin-left: 10px;
+    }
+
+    .copyright
+    {
+        font-size: .75em;
+        margin-right: 10px;
+    }
+
+    .contacts,
+    .mail
+    {
+        font-size: .8em;
+        min-height: 60px;
+        padding: 0 10px 0 85px;
+        margin: 4px 0;
+        float: left;
+    }
+
+    .mail
+    {
+        background-position: 18px -96px;
+    }
+
+    #footer ul
+    {
+        top: auto;
+        bottom: 32px;
+        right: 5px;
+    }
+
+    /* content */
+    h3
+    {
+        font-size: 1.4em;
+    }
+
+    .breadCrumb
+    {
+        overflow: hidden;
+        left: 10px;
+    }
+
+    .prolist li
+    {
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .prolist img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .prolist a
+    {
+        width: 95%;
+        height: auto;
+    }
+
+    .Pro_Content #content img
+    {
+        width: 99%;
+    }
+
+    iframe
+    {
+        max-width: 767px;
+        height: 300px;
+        width: 99%;
+    }
+
+    /* index */
+    .index #container
+    {
+        background-image: url('../images/mobile/index_bg.png');
+    }
+
+    .index #main
+    {
+        background: url('../images/mobile/index_main.png') no-repeat center 15px;
+        background-size: 468px 200px;
+        padding-top: 230px;
+        text-align: center;
+    }
+
+        .index #main ul
+        {
+            text-align: center;
+            position: relative;
+            left: 0;
+            top: 0;
+            margin: 0 auto;
+        }
+
+        .index #main li
+        {
+            background-image: url('../images/mobile/index_btn.gif');
+            background-size: 130px 38px;
+            display: inline-block;
+            float: none;
+        }
+
+        .index #main ul a
+        {
+            background: none;
+            color: #1D2087;
+            font-size: 1em;
+            font-weight: bold;
+            text-indent: 0;
+            text-align: center;
+            width: 130px;
+            height: 20px;
+            padding: 10px 0;
+        }
+
+            .index #main ul a:hover
+            {
+                color: #888;
+            }
+}
+
+/* 手機版面 */
+@media screen and (max-width: 465px)
+{
+    #header
+    {
+        height: 158px;
+    }
+
+    h1
+    {
+        background-size: 315px 187px;
+        width: 100%;
+        height: 187px;
+        top: 22px;
+    }
+
+    #menu
+    {
+        top: 120px;
+    }
+
+        #menu li
+        {
+            margin: 0 1px;
+        }
+
+        #menu a
+        {
+            font-size: .9em;
+        }
+
+    .index #main
+    {
+        background-image: url('../images/mobile/index_main2.png');
+        background-size: 315px 187px;
+    }
+}

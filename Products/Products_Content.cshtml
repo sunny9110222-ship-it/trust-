@@ -1,0 +1,33 @@
+﻿@model ProcCore.Business.Logic.m_Product
+@using ProcCore.NetExtension;
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<ul class="breadCrumb">
+    <li><a href="~/index">HOME</a></li>
+    <li><a href="~/Products/Products">產品介紹</a></li>
+    <li><a href="~/Products/Products">@Model.ex_mainkind</a></li>
+    <li>@Model.product_name</li>
+</ul>
+
+<div id="content">
+
+    <h3>@Model.product_name</h3>
+
+    <div class="pro_main">
+        <!-- 後台型錄放此，下為範例 -->
+        <p>@Html.Raw(Model.text_intro)</p>
+        @{
+            var ps = Html.ImagesAppendInfo("Sys_Active", "ProductData", Model.id, "ContexImg", 729);
+        }
+        @foreach(var p in ps){
+        <a href="@Url.Content("~/_Code/SysUpFiles/Sys_Active.ProductData/" + Model.id + "/ContexImg/OriginFile/" + p.GetFileName())" target="_blank"><img src="@p"></a>
+        }
+    </div>
+    <!-- pro_main //-->
+
+    <div class="align-r"><a class="btn" href="#header">▲TOP</a> <a class="btn" href="~/Products/Products">BACK</a></div>
+
+</div>
+<!-- content //-->

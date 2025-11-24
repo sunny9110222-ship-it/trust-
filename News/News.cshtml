@@ -1,0 +1,22 @@
+﻿@model ProcCore.Business.Logic.m_Message[]
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<ul class="breadCrumb">
+    <li><a href="~/index">HOME</a></li>
+    <li>最新消息</li>
+</ul>
+
+<div id="content">
+
+    <h3>最新消息</h3>
+    <ul class="newslist">
+        @foreach (var md in Model)
+        {
+            <li><a href="~/News/News_content/@md.id"><em>@md.set_date.ToString("yyyy-MM-dd")</em>@md.title</a></li>
+        }
+    </ul>
+    <div class="align-r"><a class="btn" href="#header">▲TOP</a></div>
+</div>
+<!-- content //-->

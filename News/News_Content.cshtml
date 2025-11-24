@@ -1,0 +1,23 @@
+﻿@model ProcCore.Business.Logic.m_Message
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<ul class="breadCrumb">
+    <li><a href="~/index">HOME</a></li>
+    <li>最新消息</li>
+</ul>
+
+<div id="content">
+
+    <h3>最新消息</h3>
+
+    <h4><em>@Model.set_date.ToString("yyyy-MM-dd")</em>@Model.title</h4>
+
+    <div class="newsC">
+        <!-- 編輯器內容放此 下為範例 -->
+        @Html.Raw(Model.context)
+    </div>
+    <!-- newsContent //-->
+    <div class="align-r"><a class="btn" href="#header">▲TOP</a> <a class="btn" href="~/News/News">BACK</a></div>
+</div>
+<!-- content //-->
