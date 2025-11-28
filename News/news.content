@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>最新消息</title>
+    <link rel="stylesheet" href="Content/css/index.css">
+    <link rel="stylesheet" href="Content/css/mobile.css">
+</head>
+<body>
+
+<ul class="breadCrumb">
+    <li><a href="/index.html">HOME</a></li>
+    <li>最新消息</li>
+</ul>
+
+<div id="content">
+
+    <h3>最新消息</h3>
+
+    <!-- 日付 + タイトル -->
+    <h4><em>{{DATE}}</em>{{TITLE}}</h4>
+
+    <!-- 本文 -->
+    <div class="newsC">
+        {{CONTENT}}
+    </div>
+
+    <div class="align-r">
+        <a class="btn" href="#header">▲TOP</a>
+        <a class="btn" href="/News/News.html">BACK</a>
+    </div>
+
+</div>
+
+</body>
+</html>
