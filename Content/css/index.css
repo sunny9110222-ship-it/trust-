@@ -1,0 +1,84 @@
+﻿@import "base/basic.css";
+@import "base/layout.css";
+
+@charset "utf-8";
+
+/*-- basic --*/
+body
+{
+    background: #19757F url('../images/index/bg.gif') repeat-x 0 0;
+    height: auto;
+}
+
+/*-- layout --*/
+#container
+{
+    /*background-image: url('../images/index/bg2.jpg');*/
+}
+
+#main
+{
+    background: none;
+    height: 433px;
+    margin: 0 auto;
+}
+
+#footer
+{
+}
+
+/*-- main --*/
+#main ul
+{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    margin-left: -383px;
+}
+
+#main li
+{
+    background: url('../images/index/btn.gif') no-repeat 0 0;
+    display: inline;
+    float: left;
+    margin-right: 5px;
+}
+
+#main a
+{
+    background-attachment: fixed;
+    background: url('../images/index/btn_c.gif%3Fv2') no-repeat 30px 8px;
+    display: block;
+    text-indent: -9999px;
+    width: 148px;
+    height: 43px;
+    -webkit-transition: background .5s ease;
+    -moz-transition: background .5s ease;
+    -o-transition: background .5s ease;
+    transition: background .5s ease;
+}
+
+    #main a:hover
+    {
+        background-image: url('../images/index/btn_c2.gif%3Fv2');
+    }
+
+#main .nav2 a
+{
+    background-position: -125px 8px;
+}
+
+#main .nav3 a
+{
+    background-position: -278px 8px;
+}
+
+#main .nav4 a
+{
+    background-position: -431px 8px;
+}
+
+#main .nav5 a
+{
+    background-position: -583px 8px;
+}

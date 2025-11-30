@@ -1,0 +1,124 @@
+@import "base/basic.css";
+@import "base/layout.css";
+
+@charset "utf-8";
+
+/*-- layout --*/
+
+
+/*-- 最新消息 --*/
+.newslist
+{
+    margin-bottom: 15px;
+}
+
+    .newslist li
+    {
+        border-bottom: 1px dotted #ccc;
+        text-indent: -5.2em;
+        line-height: 170%;
+        padding: 3px 0 3px 5.2em;
+        margin: 3px 0;
+    }
+
+    .newslist em
+    {
+        color: #aaa;
+        font-size: .85em;
+        margin-right: 10px;
+    }
+
+    .newslist a
+    {
+        color: #188E84;
+    }
+
+        .newslist a:hover
+        {
+            color: #EF3800;
+        }
+
+            .newslist a:hover em
+            {
+                color: #95AE10;
+            }
+
+.NewsContent h4 em
+{
+    display: block;
+    font-size: .8em;
+}
+
+.newsC
+{
+    line-height: 140%;
+    margin: 5px 0 15px 0;
+}
+
+/*-- 產品列表 --*/
+.prolist
+{
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+    .prolist li
+    {
+        float: left;
+        text-align: center;
+    }
+
+    .prolist img
+    {
+        max-width: 245px;
+        max-height: 120px;
+    }
+
+    .prolist a
+    {
+        background: #fff;
+        display: block;
+        width: 245px;
+        height: 160px;
+        padding: 5px;
+        margin: 5px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        box-shadow: 1px 1px 2px #9E9E9E;
+        position: relative;
+    }
+
+    .prolist em
+    {
+        color: #EB3D00;
+        font-size: 1.1em;
+        display: block;
+        font-weight: bold;
+        text-align: left;
+        position: absolute;
+        top: 130px;
+    }
+
+    .prolist a:hover em
+    {
+        color: #188E84;
+    }
+
+/*-- Contact Us --*/
+.ContactUs #content ul
+{
+    margin: 10px 0;
+}
+
+.ContactUs #content li
+{
+    border-bottom: 1px dotted #ccc;
+    margin: 5px 0;
+}
+
+iframe
+{
+    width: 780px;
+    height: 350px;
+}
